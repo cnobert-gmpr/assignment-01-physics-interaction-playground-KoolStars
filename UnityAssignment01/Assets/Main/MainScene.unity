@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3594f08bc391acf44aaffd5eeafe1dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.Lesson05Coroutines.Bumper
-  _bumperForce: 45
+  _bumperForce: 25
   _litDuration: 0.2
   _litColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!212 &909642798
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3594f08bc391acf44aaffd5eeafe1dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.Lesson05Coroutines.Bumper
-  _bumperForce: 45
+  _bumperForce: 25
   _litDuration: 0.2
   _litColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!212 &1151363756
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3594f08bc391acf44aaffd5eeafe1dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.Lesson05Coroutines.Bumper
-  _bumperForce: 45
+  _bumperForce: 25
   _litDuration: 0.2
   _litColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!212 &1443979437
@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3594f08bc391acf44aaffd5eeafe1dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.Lesson05Coroutines.Bumper
-  _bumperForce: 45
+  _bumperForce: 25
   _litDuration: 0.2
   _litColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!212 &2053345063

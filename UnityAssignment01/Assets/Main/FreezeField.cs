@@ -28,8 +28,6 @@ public class FreezeField : MonoBehaviour
         Rigidbody2D ballRB = ball.GetComponent<Rigidbody2D>();
         if (ballRB != null)
         {
-           // ballRB.linearVelocity = Vector2.zero;
-            //ballRB.angularVelocity = 0;
             ballRB.simulated = false;
         }
 

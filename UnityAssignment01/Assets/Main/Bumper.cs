@@ -21,12 +21,12 @@ namespace GMPR2512.Lesson05Coroutines
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-            if(collision.collider.CompareTag("Ball"))// collision.othercollider is the bumper
+            if(collision.collider.CompareTag("Ball"))
             {   
                 #region apply force
                     
                 
-                //Debug.Log($"A game object with the tag {collision.collider.tag} just hit me!!!");
+
                 Vector2 normal = Vector2.zero;
                 if(collision.rigidbody != null)
                 {
@@ -35,14 +35,13 @@ namespace GMPR2512.Lesson05Coroutines
                         ContactPoint2D contact = collision.GetContact(0);
                         normal = contact.normal;
                     }
-                    //if for some reason we didnt get a contact normal
+
                     else if(normal == Vector2.zero)
                     {
                         Vector2 direcrtion = (collision.rigidbody.position - (Vector2)transform.position).normalized;
                         normal = direcrtion;
                     }
-                    // it turns out that the "normal" that i calculated was the opposite direction to what i wanted
-                    // no problem, I just switched the sign
+
                     Vector2 impulse = -normal * _bumperForce;
                     collision.rigidbody.AddForce(impulse, ForceMode2D.Impulse);
                 }

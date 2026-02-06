@@ -13,7 +13,7 @@ namespace GMPR2512.Lesson05Coroutines
 
         void Awake()
         {
-            _renderer = GetComponent<SpriteRenderer>(); //this: the object that was created by this class (this.gameObject is optional)
+            _renderer = GetComponent<SpriteRenderer>();
             _originalColour = _renderer.color;
         }
 
@@ -23,8 +23,7 @@ namespace GMPR2512.Lesson05Coroutines
             {
                 _isDown = true;
                 _renderer.color = _hitColour;
-                // "nameof" returns a string that represents the name of whatever we passed it
-                Invoke(nameof(HideTarget), _hideDelay); //call the named method is _hideDelay seconds
+                Invoke(nameof(HideTarget), _hideDelay);
             }
         }
 
